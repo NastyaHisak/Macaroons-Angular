@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+@use 'node_modules/@ngneat/hot-toast/src/styles/styles.scss';
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: 'Tavolga';
+  src: url(./assets/fonts/tavolga-free.ttf);
+}
+@font-face {
+  font-family: 'Gilroy-regular';
+  src: url(./assets/fonts/gilroy-regular.ttf);
+}
+@font-face {
+  font-family: 'Gilroy-medium';
+  src: url(./assets/fonts/gilroy-medium.ttf);
+}
+@font-face {
+  font-family: 'Gilroy-bold';
+  src: url(./assets/fonts/gilroy-bold.ttf);
+}
+@font-face {
+  font-family: 'Gilroy-Extrabold';
+  src: url(./assets/fonts/Gilroy-Extrabold.ttf);
+}
+body{
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Gilroy-regular', sans-serif;
+  color: rgb(51, 25, 7);
+  background: #ffefef;
+}
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.btn {
+  background-image: -moz-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+  background-image: linear-gradient( 0deg, rgb(113,8,30) 0%, rgb(215,72,92) 100%);
+  font-size: 18px;
+  font-family: 'Gilroy-bold', sans-serif;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+  line-height: 1;
+  transition: all .3s;
+}
+/*.btn:hover{
+  box-shadow: 0 5px 9px 1px rgba(130, 19, 40, 0.5);
+}*/

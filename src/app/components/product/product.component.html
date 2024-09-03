@@ -1,0 +1,13 @@
+<div class="product">
+  <div class="product__img" *ngIf="product.image">
+    <img src="./assets/img/{{product.image}}" alt="">
+  </div>
+  <div class="product__title">{{product.title}}</div>
+  <div class="product__info">
+    <div class="product__descr">
+      <div class="product__count">{{product.count}}</div>
+     <div class="product__price">{{product.price}} руб.</div>
+    </div>
+    <button class="product__btn btn" customButton (click)="addProductToCart()">Заказать</button>
+  </div>
+</div>
